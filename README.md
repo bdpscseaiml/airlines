@@ -8,3 +8,9 @@ A Spring Boot MVC-based website for booking airline tickets, developed as part o
 2. Viewing available airline tickets and booking them (for regular users)
 3. Viewing all airline tickets, adding/removing them, and managing reservations (for administrators)
 4. Role configuration and user blocking (for administrators)
+
+### Default Administrator
+1. admin@admin.com / admin
+
+### Default User
+1. user@admin.com / admin

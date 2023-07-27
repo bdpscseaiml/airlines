@@ -1,0 +1,12 @@
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'','2023-07-27 16:56:10','admin@admin.com','Admin','$2a$08$xWDOgthVsbUsdXh10K0dS.nS920aYhM2i5GzzGstqIBd1uGHn5imK','9876543210'),(2,'','2023-07-27 16:56:41','user@admin.com','User','$2a$08$w7dWDPWhdreluUTLHUaIku5aFtjwVMjcBe2eQlpqEIrhTOjjYCe5G','80980980');
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+LOCK TABLES `user_role` WRITE;
+/*!40000 ALTER TABLE `user_role` DISABLE KEYS */;
+INSERT INTO `user_role` VALUES (1,'ROLE_ADMIN'),(2,'ROLE_USER');
+/*!40000 ALTER TABLE `user_role` ENABLE KEYS */;
+UNLOCK TABLES;
