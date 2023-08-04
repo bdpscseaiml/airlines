@@ -2,7 +2,7 @@
     <div class="copyright">
         <div class="container">
             <p><a class="copyright-link">
-                    Chartered-flight-expresssssss »&nbsp;2001-
+                    Chartered-flight »&nbsp;2001-
                     <script type="text/javascript">
                         var d = new Date();
                         document.write(d.getFullYear());

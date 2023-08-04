@@ -1,0 +1,45 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/bdpscseaiml/airlines.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                // Your build commands here
+                sh 'mvn clean package -DskipTests'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                // Your deployment steps here
+                sh 'sudo cp target/your-app.war /var/lib/tomcat9/webapps/ROOT.war'
+                sh 'sudo service tomcat9 restart'
+            }
+        }
+    }
+
+    post {
+        // always {
+        //     // Cleanup steps (run regardless of the pipeline result)
+        //     cleanWs() // Clean workspace
+        // }
+        success {
+            // Actions to run only if the pipeline succeeds
+            echo 'Deployment successful!'
+            emailext body: 'Deployment of your-app succeeded. Check it out!',
+                     subject: 'Jenkins Pipeline - Deployment Successful',
+                     to: 'recipient@example.com'
+        }
+        failure {
+            // Actions to run only if the pipeline fails
+            echo 'Deployment failed!'
+            emailext body: 'Deployment of your-app failed. Please investigate.',
+                     subject: 'Jenkins Pipeline - Deployment Failed',
+                     to: 'recipient@example.com'
+        }
+    }
+}
