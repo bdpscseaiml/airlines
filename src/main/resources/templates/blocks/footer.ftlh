@@ -2,7 +2,7 @@
     <div class="copyright">
         <div class="container">
             <p><a class="copyright-link">
-                    Space-xyz-using webhook-flight »&nbsp;2004-
+                    Spacecraft »&nbsp;2004-
                     <script type="text/javascript">
                         var d = new Date();
                         document.write(d.getFullYear());
