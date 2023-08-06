@@ -1,4 +1,4 @@
-<h1> <img src="src/main/resources/static/assets/logo.png" alt="logo" width="36"> AIRLINES </h1>
+<h1> <img src="src/main/resources/static/assets/logo.png" alt="logo" width="36"> AIRLINES Java </h1>
 
 ### ABOUT
 A Spring Boot MVC-based website for booking airline tickets, developed as part of a university program.
