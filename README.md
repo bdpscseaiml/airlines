@@ -2,7 +2,6 @@
 
 ### ABOUT
 A Spring Boot MVC-based website for booking airline tickets, developed as part of a university program.
-Testing
 
 ### AVAILABLE FEATURES:
 1. Registration / Login
