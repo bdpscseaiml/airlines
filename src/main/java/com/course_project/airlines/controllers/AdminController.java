@@ -1,4 +1,4 @@
-package com.course_project.airlines.controllers;adfa
+package com.course_project.airlines.controllers;
 
 import com.course_project.airlines.models.Flight;
 import com.course_project.airlines.models.User;
