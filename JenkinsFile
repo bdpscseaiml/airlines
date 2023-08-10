@@ -30,16 +30,16 @@ pipeline {
         success {
             // Actions to run only if the pipeline succeeds
             echo 'Deployment successful!'
-            emailext body: 'Deployment of your-app succeeded. Check it out!',
-                     subject: 'Jenkins Pipeline - Deployment Successful',
-                     to: 'recipient@example.com'
+            //emailext body: 'Deployment of your-app succeeded. Check it out!',
+                    // subject: 'Jenkins Pipeline - Deployment Successful',
+                     //to: 'recipient@example.com'
         }
         failure {
             // Actions to run only if the pipeline fails
             echo 'Deployment failed!'
-            emailext body: 'Deployment of your-app failed. Please investigate.',
-                     subject: 'Jenkins Pipeline - Deployment Failed',
-                     to: 'recipient@example.com'
+            //emailext body: 'Deployment of your-app failed. Please investigate.',
+                    // subject: 'Jenkins Pipeline - Deployment Failed',
+                     //to: 'recipient@example.com'
         }
     }
 }
